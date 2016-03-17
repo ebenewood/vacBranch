@@ -1,12 +1,41 @@
-
+function color (num) {
+	if ( num == 0) {
+				return 'red';
+	} else if
+		( num == 1) {
+		 	return 'blue';
+	} else if
+		( num == 2) {
+			return 'green';
+	} else if
+		( num == 3) {
+			return 'purple';
+	} else if
+		( num == 4) {
+			return 'black';
+	} else if
+		( num == 5) {
+			return 'gray';
+	} else if
+		( num == 6) {
+			return 'orange';
+	} else if
+		( num == 7) {
+			return 'brown';
+	} else if
+		( num == 8) {
+			return 'yellow';
+		};
+};
 
 function bgc() {
 	one = new Date();
 	one = Date.parse(one);
 	one = one.toString();
+	colorArr = [];
 
 	for (i = 0; i <= one.length; i++) {
-		x = color(charAt(i));
+		x = color(one.charAt(i));
 		colorArr.push(x);
 
 	};
