@@ -58,7 +58,7 @@ function pix(color) {
 
 function pixMaker() {
 	for (i = 0; i <= (colorArr.length - 1); i++) {
-		i + 1 == new pix(colorArr[i]);
+		window['pix' + i] = new pix(colorArr[i]);
 	};
 };
 
