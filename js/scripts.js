@@ -1,6 +1,6 @@
 function color (num) {
 	if ( num == 0) {
-				return 'red';
+			return 'red';
 	} else if
 		( num == 1) {
 		 	return 'blue';
@@ -25,6 +25,9 @@ function color (num) {
 	} else if
 		( num == 8) {
 			return 'yellow';
+	} else if
+		( num == 9) {
+			return 'pink';
 		};
 };
 
@@ -38,6 +41,25 @@ function bgc() {
 		x = color(one.charAt(i));
 		colorArr.push(x);
 
+	};
+};
+
+var pix = {
+	width: 1px;
+	heighth: 1px;
+	color: '';
+};
+
+function pix(color) {
+	this.width = 'width 1px';
+	this.height = 'height 1px';
+	this.color = color;
+};
+
+function pixMaker()
+	for (i = 0; i <= (colorArr.length - 1); i++) {
+
+	var i.toString = new pix(colorArr[])
 	};
 };
 
