@@ -44,11 +44,11 @@ function bgc() {
 	};
 };
 
-var pix = {
-	width: 1px;
-	heighth: 1px;
-	color: '';
-};
+// var pix = {
+// 	width: 1px;
+// 	heighth: 1px;
+// 	color: '';
+// };
 
 function pix(color) {
 	this.width = 'width 1px';
@@ -56,13 +56,11 @@ function pix(color) {
 	this.color = color;
 };
 
-function pixMaker()
+function pixMaker() {
 	for (i = 0; i <= (colorArr.length - 1); i++) {
-
-	var i.toString = new pix(colorArr[])
+		i + 1 == new pix(colorArr[i]);
 	};
 };
-
 
 $(function () {
 	// $('body').css('background-color'
