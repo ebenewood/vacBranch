@@ -64,15 +64,17 @@ function pixMaker() {
 
 $(function () {
 	bgc();
+	var k = 1;
 
-	for (j = 0; j <= (colorArr.length - 1); j++) {
+	for (j = 0; j <= 10; j++) {
 		for (i = 0; i <= (colorArr.length - 1); i++) {
 
-			var divApp = '<div style="width: 1px; height: 1px; background-color:' + colorArr[i] + '";>' + '</div>'
+			var divApp = '<div style="position: fixed; top:' + (k += 1) + 'px; left:' + (k += 1) + 'px; background-color: ' + colorArr[i] + '; width:' + (k) + 'px; height:' + (k) + 'px;"></div>'
 
-					$('body').append(divApp);
+					$('.loopbox').append(divApp);
 
-		};
+
+	};
 };
 	$('body').fadeIn(500);
 

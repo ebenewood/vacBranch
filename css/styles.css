@@ -25,3 +25,17 @@ body {
 	width: 1px;
 	height: 100px;
 }
+
+.loopbox {
+	position: absolute;
+	z-index: -1;
+}
+
+.top {
+	position: absolute;
+	z-index: 1;
+}
+
+.transparent {
+	background-color: transparent;
+}
