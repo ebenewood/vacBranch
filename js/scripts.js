@@ -63,7 +63,17 @@ function pixMaker() {
 };
 
 $(function () {
-	// $('body').css('background-color'
+	bgc();
+
+	for (j = 0; j <= (colorArr.length - 1); j++) {
+		for (i = 0; i <= (colorArr.length - 1); i++) {
+
+			var divApp = '<div style="width: 1px; height: 1px; background-color:' + colorArr[i] + '";>' + '</div>'
+
+					$('body').append(divApp);
+
+		};
+};
 	$('body').fadeIn(500);
 
 	var evalArr = [];
