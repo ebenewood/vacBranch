@@ -1,15 +1,27 @@
-/*#questions {
-	display: none;
-}*/
-
 .wide {
 	width: 50%;
 }
 
 .center {
-		text-align: center;
+		margin-left: 30%;
+		margin-right: 30%;
 }
 
 .nodisplay {
 	display: none;
+}
+
+.boxit {
+	width: 300px;
+	height: 300px;
+}
+
+body {
+	background-color: 145818;
+}
+
+.t {
+	background-color: red;
+	width: 1px;
+	height: 1px;
 }
