@@ -1,5 +1,5 @@
 function color (num) {
-	if ( num == 0) {
+ if ( num == 0) {
 			return 'red';
 	} else if
 		( num == 1) {
@@ -27,18 +27,18 @@ function color (num) {
 			return 'yellow';
 	} else if
 		( num == 9) {
-			return 'pink';
+			return 'orchid';
 		};
 };
 
 function bgc() {
-	one = new Date();
-	one = Date.parse(one);
-	one = one.toString();
+	userDate = new Date();
+	userDate = Date.parse(userDate);
+	userDate = userDate.toString();
 	colorArr = [];
 
-	for (i = 0; i <= one.length; i++) {
-		x = color(one.charAt(i));
+	for (i = 0; i <= userDate.length; i++) {
+		x = color(userDate.charAt(i));
 		colorArr.push(x);
 
 	};
@@ -62,20 +62,95 @@ function pixMaker() {
 	};
 };
 
+function orientX() {
+
+	if (parseInt(userDate.charAt(9)) % 2 == 0) {
+		posX = 'top';
+	} else {
+		posX = 'bottom';
+	};
+};
+
+function orientY() {
+	newSeed = new Date();
+	newSeed = Date.parse();
+	newSeed = newSeed.toString();
+	if (parseInt(newSeed.charAt(9)) % 2 == 0) {
+		posY = 'left';
+	} else {
+		posY = 'right';
+	};
+};
+
+
+
 $(function () {
 	bgc();
-	var k = 1;
+	orientX();
+	orientY();
 
-	for (j = 0; j <= 10; j++) {
+	var k = 1;
+	var l = 1;
+	var m = 1;
+	var n = 1;
+
+	alert(userDate.charAt(9));
+
+	for (j = 0; j <= 100; j++) {
 		for (i = 0; i <= (colorArr.length - 1); i++) {
 
-			var divApp = '<div style="position: fixed; top:' + (k += 1) + 'px; left:' + (k += 1) + 'px; background-color: ' + colorArr[i] + '; width:' + (k) + 'px; height:' + (k) + 'px;"></div>'
+			var divApp = '<div style="position: fixed;' + posX + ': ' + (k += parseInt(userDate.charAt(1))) + 'px;' + posY + ': ' + (l += parseInt(userDate.charAt(2))) + 'px; background-color: ' + colorArr[i] + '; width:' + (m += parseInt(userDate.charAt(3))) + 'px; height:' + (n += parseInt(userDate.charAt(3))) + 'px;"></div>'
 
 					$('.loopbox').append(divApp);
 
-
 	};
 };
+
+// var k = 1;
+// var l = 1;
+// var m = 1;
+// var n = 1;
+//
+// for (j = 0; j <= 100; j++) {
+// 	for (i = 0; i <= (colorArr.length - 1); i++) {
+//
+// 		var divApp = '<div style="position: fixed; bottom:' + (k += parseInt(userDate.charAt(1))) + 'px; right:' + (l += parseInt(userDate.charAt(2))) + 'px; background-color: ' + colorArr[i] + '; width:' + (m += parseInt(userDate.charAt(3))) + 'px; height:' + (n += parseInt(userDate.charAt(3))) + 'px;"></div>'
+//
+// 				$('.loopbox').append(divApp);
+//
+// };
+// };
+//
+// var k = 1;
+// var l = 1;
+// var m = 1;
+// var n = 1;
+//
+// for (j = 0; j <= 100; j++) {
+// 	for (i = 0; i <= (colorArr.length - 1); i++) {
+//
+// 		var divApp = '<div style="position: fixed; top:' + (k += parseInt(userDate.charAt(1))) + 'px; right:' + (l += parseInt(userDate.charAt(2))) + 'px; background-color: ' + colorArr[i] + '; width:' + (m += parseInt(userDate.charAt(3))) + 'px; height:' + (n += parseInt(userDate.charAt(3))) + 'px;"></div>'
+//
+// 				$('.loopbox').append(divApp);
+//
+// };
+// };
+//
+// var k = 1;
+// var l = 1;
+// var m = 1;
+// var n = 1;
+//
+// for (j = 0; j <= 100; j++) {
+// 	for (i = 0; i <= (colorArr.length - 1); i++) {
+//
+// 		var divApp = '<div style="position: fixed; bottom:' + (k += parseInt(userDate.charAt(1))) + 'px; left:' + (l += parseInt(userDate.charAt(2))) + 'px; background-color: ' + colorArr[i] + '; width:' + (m += parseInt(userDate.charAt(3))) + 'px; height:' + (n += parseInt(userDate.charAt(3))) + 'px;"></div>'
+//
+// 				$('.loopbox').append(divApp);
+//
+// };
+// };
+
 	$('body').fadeIn(500);
 
 	var evalArr = [];
