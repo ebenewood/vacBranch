@@ -106,7 +106,7 @@ function divMaker () {
 
   var divAttr = '';
 
-	for (j = 0; j <= 100; j++) {
+	for (j = 0; j <= 9; j++) {
 		for (i = 0; i <= (colorArr.length - 1); i++) {
 
 			divAttr +=
