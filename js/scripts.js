@@ -309,7 +309,7 @@ After a certain number of elements are added to the evalArr array, or the user i
 
     } else if
       ($('input#one').val().toLowerCase() == 'yes' && evalArr.toString() == '1,1,0') {
-				$('h1').text('edgey beach life');
+				$('h1').text('edgy beach life');
 
 			  $('.blocks').css('background-image', 'url(img/beach.jpg)');
         evalArr.push('U+2404');
