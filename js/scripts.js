@@ -266,10 +266,10 @@ After a certain number of elements are added to the evalArr array, or the user i
         evalArr.push('U+2404');
 
     } else if
-      ($('input#one').val().toLowerCase() == 'yes' && evalArr.toString() == '0,0,1') {
-        $('h1').text('hyper-right-angles-forever');
+      ($('input#one').val().toLowerCase() == 'no' && evalArr.toString() == '0,0,1') {
+        $('h1').text('without a shadow of a doubt...');
 
-        $('.blocks').css('background-image', 'url(img/hype.jpg)');
+        $('.blocks').css('background-image', 'url(img/pup.jpg)');
         evalArr.push('U+2404');
 
     } else if
@@ -309,7 +309,7 @@ After a certain number of elements are added to the evalArr array, or the user i
 
     } else if
       ($('input#one').val().toLowerCase() == 'yes' && evalArr.toString() == '1,1,0') {
-				$('h1').text('edgey beach life');
+				$('h1').text('edgy beach life');
 
 			  $('.blocks').css('background-image', 'url(img/beach.jpg)');
         evalArr.push('U+2404');
