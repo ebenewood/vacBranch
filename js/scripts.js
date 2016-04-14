@@ -121,9 +121,9 @@ function divMaker () {
       'px; background-color: ' +
       colorArr[i] +
       '; width:' +
-      (addwidth += parseInt(userDate.charAt(3))) +
+      (addwidth += parseInt(userDate.charAt(3) + 2)) +
       'px; height:' +
-      (addheight += parseInt(userDate.charAt(3))) +
+      (addheight += parseInt(userDate.charAt(3) + 2)) +
       'px;" class="blocks"></div>'
 
     };
